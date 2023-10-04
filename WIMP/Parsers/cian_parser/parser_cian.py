@@ -5,6 +5,7 @@ import requests
 from realty import check_database
 
 
+
 def get_offer(item):
     offer = {}
 
@@ -25,10 +26,12 @@ def get_offer(item):
     return offer
 
 
+
 def get_offers(data):
     for item in data["data"]["offersSerialized"]:
         offer = get_offer(item)
         check_database(offer)
+
 
 
 def get_json():
@@ -39,6 +42,7 @@ def get_json():
     response = requests.post('https://api.cian.ru/search-offers/v2/search-offers-desktop/', headers=headers, data=data)
     result = response.json()
     return result
+
 
 
 def main():
