@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Decim\Desktop\git reps\WIMP\venv"
+VIRTUAL_ENV="C:\Users\aleks\OneDrive\Рабочий стол\ideal django project\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+
+	<!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Spark</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="{% static 'main/css/base.css' %}"/>
+  <link rel="stylesheet" href="{% static 'main/css/skeleton.css' %}"/>
+  <link rel="stylesheet" href="{% static 'main/css/project.css' %}"/>
+  
+  <!--[if lte IE 8]>
+      <script src="js/html5.js"></script>
+  <![endif]-->		
+      
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+</head>
+<body>
+	<div id="project">
+				<div class="container">
+					<div class="sixteen columns">
+						<h1>Route 66</h1> 
+					</div>
+					<div class="ten columns">
+						<div class="media">
+							<iframe src="http://player.vimeo.com/video/47224216?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=665a7e" ></iframe>
+						</div>
+					</div>
+					<div class="six columns">
+						<img src="{% static 'main/img/gallery/2.jpg' %}" alt=""> 
+					</div>
+					<div class="sixteen columns"> 
+						<div class="separator-space"></div> 
+					</div>	
+					<div class="one-third column">
+						<h6>THE CHALLENGE</h6> 
+						<p>Pellentesque egestas ornare sagittis. Sed augue lorem, dignissim eget bibendum vitae, scelerisque eget justo. Duis tincidunt erat quam.</p>
+					</div>
+					<div class="one-third column">
+						<h6>THE SOLUTION</h6> 
+						<p>Pellentesque egestas ornare sagittis. Sed augue lorem, dignissim eget bibendum vitae, scelerisque eget justo. Duis tincidunt erat quam.</p>
+					</div>
+					<div class="one-third column">
+						<h6>THE RESULT</h6> 
+						<p>Pellentesque egestas ornare sagittis. Sed augue lorem, dignissim eget bibendum vitae, scelerisque eget justo. Duis tincidunt erat quam.</p>
+					</div>
+					<div class="sixteen columns"> 
+						<div class="separator-space"></div> 
+					</div>	
+					<div class="sixteen columns">
+						<div class="link-project"><div class="cl-effect-8"><a href="#"><span>visit website</span></a></div></div>	
+					</div>
+				</div>
+	</div>	
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
