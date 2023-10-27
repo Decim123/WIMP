@@ -8,7 +8,7 @@ import sys
 
 #прокси сервера
 proxies = {
-  'https': 'http://SywsYG:W236W7@45.91.209.157:10234',
+  'https': 'http://Fx4sFy:xtg85C@70.38.2.8:13043',
 }
 #путь к каталогу где сохраняется файл scrip.json
 current_dir = os.getcwd()
@@ -80,20 +80,26 @@ while x > y:
 
     url = 'https://realty.ya.ru/moskva/snyat/kvartira/bez-posrednikov/?page=' + z
     z = int(z)
-    if z % 3 == 0:
+    if z % 5 == 0:
         proxies = {
-        'https': 'http://XQmL0w:zcyPdR@85.195.81.143:10776',
+        'https': 'http://Fx4sFy:xtg85C@70.38.2.8:13043',
+        }
+    elif z % 4 == 0:
+        proxies = {
+        'https': 'http://ZKjAGJ:3Tvg29@45.32.56.105:10601',
+        }
+    elif z % 3 == 0:
+        proxies = {
+        'https': 'http://ENWavf:8k2bvc@45.153.20.209:12732',
         }
     elif z % 2 == 0:
         proxies = {
-        'https': 'http://SywsYG:W236W7@45.91.209.157:10234',
+        'https': 'http://eSKv5q:PA5xSE@45.91.209.157:12822',
         }
-    else:
+    else :
         proxies = {
-        'https': 'http://9j67JM:4tx0B5@217.29.62.211:13336',
+        'https': 'http://srRTwD:0wPGjt@45.153.20.209:12731',
         }
-
-
     r = requests.get(url, headers=headers, proxies=proxies)
 
     if __name__ == '__main__':
